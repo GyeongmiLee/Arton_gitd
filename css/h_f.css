@@ -27,7 +27,7 @@
    }
    
 #wrap{
-    min-width: 1400px;
+    /* min-width: 1400px; */
 }
 /* *****************************헤더***************************** */
 .header{
@@ -35,7 +35,7 @@
     height: 80px;
     background-color: #fcffcb;
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-around; 
     align-items: center; 
 }
 .header_event{
@@ -66,7 +66,7 @@
     height: 80px; 
     padding: 0 0 0 20px;
     background-color: #fcffcb;
-    background: url(../img/arton_main_logo.png) no-repeat center / 200px ;
+    background: url(../img/arton_main_logo.png) no-repeat center / 150px ;
 }
 .logo a{
     display: block;
@@ -178,6 +178,11 @@
 .main{
     min-height: 1100px;
 }
+.box{
+    width: 100%;
+    height: 500px;
+    background-color: rebeccapurple;
+}
 /* ***************************** 푸터 ***************************** */
 .footer{
     width: 100%;
@@ -190,7 +195,7 @@
 .f_logo{
     width: 300px;
     height: 300px;
-    background: url(../img/arton_logo_f_f.png) no-repeat center / cover;
+    background: url(../img/arton_logo_f_f.png) no-repeat center / contain;
 }
 .f_desc{ 
     width: 500px;
