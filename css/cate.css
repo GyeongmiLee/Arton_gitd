@@ -1,0 +1,84 @@
+/* ***************************메인 슬라이드 ***************************** */
+.main_banner {
+    width: 1400px;
+    height: 500px;
+    background-color: aqua;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    position: relative;
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    /* flex-wrap: nowrap; */
+}
+.banner_box{
+    display: flex;
+    justify-content: space-between;
+    gap: 93px;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.banner {
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    /* position: absolute;
+    top: 0; */
+    /* transition: 0.3s all; */
+    /* 스크립트로 초기값 세팅 하기 */
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+
+}
+.ban_1{
+    left: -500px;
+    background-color: red;
+}
+.ban_2{
+    left: 0px;
+    background-color: blue;
+}
+.ban_3{
+    left: 500px;
+    background-color: green;
+}
+.ban_4{
+    left: 1000px;
+    background-color: yellow;
+}
+.ban_5{
+    left: 1500px;
+    background-color: yellowgreen;
+}
+
+
+.slide{
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+    /* 버튼 클릭시 색 바뀌기 */
+}
+.slide_prev {
+    background: url(../img/slide_prev.png) no-repeat center / contain;
+    position: absolute;
+    /* top: 209px; */
+    top: 50%;
+    transform: translate(-50%);
+    left: 30px;
+   
+}
+
+.slide_next {
+    background: url(../img/slide_next.png) no-repeat center / contain;
+    position: absolute;
+    /* top: 209px; */
+    top: 50%;
+    transform: translate(-50%);
+    right: 30px;
+}
+
