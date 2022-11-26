@@ -36,15 +36,13 @@ body{
 }
 .terms_sec{
     width: 460px;
-    height: 705px;
-    /* background-color: yellowgreen; */
     margin: 0 auto;
 }
 .terms_title{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 17px;
-    font-weight: 700;
+    margin: 10px auto;
+    width: 122px;
+    height: 41px;
+    background: url(../img/arton_main_logo.png) no-repeat center / contain;
 }
 .terms_list{
     margin-top: 14px;
@@ -78,16 +76,8 @@ label{
     left: 24px;
 }
 #terms_service:checked+label>.chk_icon,
-#terms_privacy:checked+label>.chk_icon,
-#terms_promo:checked+label>.chk_icon{
-    display: inline-block;
+#terms_privacy:checked+label>.chk_icon{
     background: url(../img/terms/m_chcek_on_s.png) no-repeat center / contain;
-    width: 20px;
-    cursor: pointer;
-    height: 20px;
-    position: relative;
-    top: 5px;
-    left: 24px;
 }
 #terms_privacy+label>.chk_icon{
     left: 8px;
@@ -115,6 +105,9 @@ label{
     background: #22974a;
     border-radius: 4px;
 }
+.article_txt{
+    padding: 0px 15px;
+}
 
 .prmo_txt_without{
     border: none;
@@ -130,7 +123,6 @@ label{
 }
 .li_last{
     height: 63px;
-    margin-top: -13px;
 }
 .btn_area{
     margin-top: 10px;
@@ -147,6 +139,8 @@ label{
     font-weight: 700;
     text-align: center;
     line-height: 35px;
+    border: none;
+    cursor: pointer;
 }
 #btn_can{
     background-color: #5f5f5f;
