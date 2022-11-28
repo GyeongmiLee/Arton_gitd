@@ -13,8 +13,8 @@ $(document).ready(function(){
 */
 
     
-$('#btn_agr').click(function(){
-const btn_agr = $('#btn_agr');
+$('#terms_btn_agr').click(function(){
+const btn_agr = $('#terms_btn_agr');
 const terms_service = $('#terms_service');
 const terms_privacy = $('#terms_privacy');
 
@@ -27,7 +27,7 @@ const terms_privacy = $('#terms_privacy');
     }
 });
 
-$('#btn_can').click(function(){
+$('#terms_btn_can').click(function(){
     window.location.reload();
 });
 });
