@@ -8,8 +8,8 @@ $(document).ready(function(){
 });
 let login_msg = $('.login_msg');
 function form_chk(frm){
-    console.log(frm.id);
-    console.log(frm.id.value);
+    // console.log(frm.$('id'));
+    // console.log(frm.$('id').val());
 
     if(frm.id.value.length == 0 && frm.pw.value.length == 0){
         set_message('아이디와 패스워드는 필수항목입니다',frm.id);
