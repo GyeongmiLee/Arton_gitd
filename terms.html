@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <form id="terms_form" method="post" action="#">
+    <form id="terms_form" method="POST" action="#">
         <!-- action에 회원가입 들어가야 -->
         <div class="terms_sec">
-            <a href="./index.html">
+            <a href="#">
+                <!-- a태그 클릭 시 메인페이지 -->
                 <div class="terms_title"></div>
             </a>
             <ul class="terms_list">
@@ -115,21 +116,6 @@
                         </div>
                     </div>
                 </li>
-                <!-- <li class="terms_box">
-                    <input type="checkbox" id="terms_promo">
-                    <label for="terms_promo">프로모션 정보 수신동의
-                        <span class="span">(선택)</span>
-                        <span class="chk_icon"></span>
-                    </label>
-
-                    <div class="txt_box prmo_txt_without">
-                        <p class="promo_txt">
-                            아트온에서 제공하는 이벤트/혜택 등 다양한 정보를 휴대전화(네이버앱 알림 또는 문자), 이메일로 받아보실 수 있습니다.
-                            일부 서비스(별도 회원 체계로 운영하거나 아트온 가입 이후 추가 가입하여 이용하는 서비스 등)의 경우, 개별 서비스에 대해 별도 수신 동의를 받을 수 있으며,
-                            이때에도 수신 동의에 대해 별도로 안내하고 동의를 받습니다.
-                        </p>
-                    </div>
-                </li> -->
                 <li class="terms_box li_last">
                     <div class="last_terms_title">회원가입 유의사항</div>
                     <div class="last_terms_txt">• 반드시 회원님 명의로 된 휴대폰, 아이핀을 이용해주세요</div>
@@ -138,11 +124,11 @@
                 <li class="terms_box li_last">
                     <div class="btn_area">
                         <span>
-                            <input type="button" class="btn_type" id="btn_can" value="취소">
+                            <input type="button" class="btn_type" id="terms_btn_can" value="취소">
                             <!-- 취소 버튼 누를시, 새로고침 -->
                         </span>
                         <span>
-                            <input type="button" class="btn_type" id="btn_agr" value="확인">
+                            <input type="button" class="btn_type" id="terms_btn_agr" value="확인">
                             <!-- 조건 충족하고 '확인' 누르면 submit으로 바뀜-->
                         </span>
                     </div>
