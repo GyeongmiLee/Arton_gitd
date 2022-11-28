@@ -25,10 +25,10 @@
 .nanumbarungothic * {
     font-family: 'NanumBarunGothic', sans-serif;
    }
-   
-#wrap{
+/*    
+.reg_box{
     min-width: 1400px;
-}
+} */
 
 /******************************회원가입******************************/
 body{
@@ -63,7 +63,7 @@ label{
     font-weight: 700;
     margin-top: 17px;
 }
-.text, .gender_box{
+.reg_text, .gender_box{
     padding: 0px 7px;
     background-color: transparent;
     outline: none;
@@ -80,7 +80,7 @@ label{
     background-color: transparent;
     height: 28px;
 }
-#gender{
+#reg_gender{
     background-color: transparent;
     border: none;
     width: 100%;
@@ -138,8 +138,10 @@ label:nth-last-child(1){
 }
 /*조건 미충족시 메세지*/
 .reg_msg{
+    margin-top: 2px;
     font-size: 10px;
-    color:#22974a;
+    font-weight: 700;
+    color: #22974a;
 }
 
 
