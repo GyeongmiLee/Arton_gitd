@@ -10,11 +10,8 @@ $(document).ready(function(){
 2. 비밀번호
 3. 비밀번호 재확인
 4. 이름 => 입력 했는지(null이면 허용 안되게)
-5. 생년월일은 => max 걸어놔서 안해도 될듯..?
--> 1900년도 이상/ 2022년도 이하
--> 월은 01~12까지만 가능
--> 일은 윤년....!01~31까지인데.... => 달별로 달라야
-(윤년은 걸지말까..?) ->
+5. 생년월일은 => 정규식
+
 
 6. 성별은 걸거없음.......!
 7. 이메일도 null만 허용 안되게
@@ -49,10 +46,11 @@ function init_msg(){
 function form_chk(frm){
     //전체 정보용이야!
     // let msg = "";
-    if(!reg_id_1.test(frm.id.value)){
+    console.log("첫번쨰" + frm.reg_id.value);
+    if(!reg_id_1.test(frm.reg_id.value)){
         set_message('5~20자의 영문 소문자, 숫자와 특수기호(_),(-) 만 사용 가능합니다.',frm.id)
-        console.log(frm.id.value);
-        console.log(frm.id);
+        console.log(frm.reg_id.value);
+        console.log(frm.reg_id);
         return false;
     }
     return true;
