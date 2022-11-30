@@ -27,9 +27,8 @@ function form_chk(frm){
         return false;
     }
     return true;
-   //강사님 element가 예약어인가요..?
 }
-
+//trim 적용하면 좋을듯 (세현의견)
 function set_message(msg,e){
     login_msg.text(msg);
     // alert("d4");
