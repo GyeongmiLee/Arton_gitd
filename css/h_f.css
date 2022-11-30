@@ -27,7 +27,7 @@
    }
    
 #wrap{
-    /* min-width: 1400px; */
+    min-width: 1400px;
 }
 /* *****************************헤더***************************** */
 .header{
@@ -180,8 +180,9 @@
 }
 .box{
     width: 100%;
-    height: 500px;
-    background-color: rebeccapurple;
+    /* height: 100vh; */
+    /* 이거 수정함 */
+    /* background-color: rebeccapurple; */
 }
 /* ***************************** 푸터 ***************************** */
 .footer{
