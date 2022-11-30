@@ -75,12 +75,17 @@ label{
     box-sizing: border-box;
     font-size: 11px;
 }
+.pw_msg{
+    font-size: 10px;
+    color: #372e2e;
+    margin-left: 6px;
+}
 
 .gender_box{
     background-color: transparent;
     height: 28px;
 }
-#reg_gender{
+#u_gender{
     background-color: transparent;
     border: none;
     width: 100%;
@@ -116,9 +121,9 @@ label:nth-last-child(1){
     left: 5px;
 }
 #promo_btn{
-    display: none;
+    /* display: none; */
 }
-#promo_btn:checked+label>.promo_btn_img{
+#promo_btn:checked~label>.promo_btn_img{
     background: url(../img/terms/m_chcek_on_s.png) no-repeat center / contain;
 }
 /* 가입 버튼 */
