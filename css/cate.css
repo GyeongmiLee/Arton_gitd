@@ -60,25 +60,21 @@
 
 }
 .banner_box{
-    position: relative;
     display: flex;
     width: 100%;
     height: 100%;
     position: relative;
-    margin-left: 20px;
-
- 
+    margin-left: 40px;
 }
 .banner {
     margin-top: 50px;
-    /* overflow: hidden; */
     cursor: pointer;
     position: absolute;
     top: 0;
 
 }
 .banner img{
-    width: 405px;
+    width: 365px;
     height: 405px;
 }
 /*슬라이드 버튼*/
@@ -96,6 +92,7 @@
 .slide_next {
     right: 30px;
 }
+/* 이미지 가운데로 올시 -> scale */
 .on{
     transform: scale(1.2);
 }
@@ -106,8 +103,6 @@
     width: 100%;
     height: 152px;
     line-height: 152px;
-    /* background-color: yellowgreen; */
- 
 }
 .title_text{
     font-size: 40px;
@@ -116,17 +111,15 @@
     text-align: center;
 }
 .title_text>span{
-    color: #22974a;
+    color: #008049;
 }
 .hot_sec{
-    /* 부모 */
+    /* 부모 : li*/
     position: relative;
-    /* width: calc(100% / 5); */
 }
 .hot_list{
     width: 100%;
     max-width: 1200px;
-    /* background-color: #22974a; */
     height: 900px;
     display: flex;
     justify-content: center;
@@ -141,6 +134,7 @@
 }
 .hot_sec:hover.hot_sec>a>img{
     scale: 1.2;
+    box-shadow: 0 0 10px 0 rgb(55 55 55 / 50%);
 }
 .hot_sec_dis_box{
     width: 50px;
@@ -151,29 +145,33 @@
     top: 195px;
     right: 5px;
 }
+.hot_per_place{
+    color: #828282;
+}
 .dis_txt{
     font-size: 19px;
     line-height: 50px;
     text-align: center;
 }
 .hot_sec_txt_box{
-    /* background-color: yellow; */
     text-align: center;
-    /* max-width: 180px; */
+        /* scale용 */
     margin-top: 30px; 
-    /* scale용 */
 }
 /*텍스트 라인 넘치지 않게 하는 용*/
 .hot_sec_txt_box div{
     max-width: 180px;
     max-height: 65px;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
+}
+.hot_per_name{
+    height: 40px;
 }
 .disc_msg{
     font-style: italic;
-    color: #22974a;
+    color: #008049;
 }
 /* *************************** ranking ***************************** */
 .ranking_recommend{
@@ -207,8 +205,8 @@
     text-align: center;
     line-height: 23px;
     font-size: 25px;
-    background-color: #22974a;
-    color: black;
+    background-color: #008049;
+    color: white;
     font-weight: 800;
     display: inline-block;
     border-radius: 5px;
@@ -217,12 +215,12 @@
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    border-top: 2px solid #22974a;
+    border-top: 2px solid #008049;
 }
 
 .r_box_list{
     height: 58px;
-    border-bottom: 2px solid #22974a;
+    border-bottom: 2px solid #008049;
     display: flex;
     white-space: nowrap;
     transition: .3s;
@@ -405,14 +403,14 @@
 }
 /* oN가리킴 */
 .picks_title_text>span:nth-of-type(2){ 
-    color: #22974a;
+    color: #008049;
 }
 /*그림 안*/
 .picks_body{
     width: 216px;
     position: relative;
 }
-.picks_sec>img{
+.picks_img_box>img{
     width: 216px;
     height: 300px;
     object-fit: fill;
@@ -420,7 +418,7 @@
 .picks_list{
     display: flex;
     max-width: 1200px;
-    /* background-color: #22974a; */
+    /* background-color: #008049; */
     margin: 0 auto;
     flex-wrap: wrap;
     height: 900px;
@@ -435,8 +433,9 @@
 .msg_box{
     position: absolute;
     width: 100%;
-    height: 45%;
-    bottom: 0;
+    height: 0;
+    bottom: 99px;
+    transform: translateY(0);
     background-color: rgba(148, 148, 148, 0.75);
     color: white;
     display: flex;
@@ -446,18 +445,21 @@
     font-size: 18px;
     font-weight: 800;
     text-overflow: ellipsis;
-    opacity: 0;
+    /* opacity: 0; */
     transition: .2s;
     overflow: hidden;
 }
 .picks_per_pla{
     font-style: italic;
+    color: #828282;
 }
+
 /*호버시*/
-.picks_body:hover .msg_box{
+.picks_img_box:hover+.msg_box{
     opacity: 1;
-    transform: translatey(-47%);
-    
+    /* transform: translatey(-47%); */
+    transform: translateY();
+    height: 45%;
 }
 /*텍스트*/
 .picks_txt{
@@ -473,7 +475,10 @@
     max-width: 216px;
     max-height: 50px;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
+}
+.picks_per_name{
+    height: 40px;
 }
 
