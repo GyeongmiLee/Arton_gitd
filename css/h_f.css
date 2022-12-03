@@ -33,10 +33,11 @@
 .header{
     width: 100%;
     height: 80px;
-    background-color: #fcffcb;
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #828282;
 }
 .header_event{
     position: fixed;
@@ -63,10 +64,10 @@
 }
 .logo{
     width: 200px;
-    height: 80px; 
+    height: 80px;
     padding: 0 0 0 20px;
-    background-color: #fcffcb;
-    background: url(../img/arton_main_logo.png) no-repeat center / 150px ;
+    /* background-color: #fcffcb; */
+    background: url(../img/arton_main_logo.png) no-repeat center / 120px;
 }
 .logo a{
     display: block;
@@ -98,7 +99,7 @@
     bottom: -7px;
     width: 0;
     height: 5px;
-    background-color: #22974a;
+    background-color: #008049;
 }
 /* 마우스 호버시 밑줄 왼쪽에서 오른쪽 */
 .menu_ul > li:hover::after{
