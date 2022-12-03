@@ -32,10 +32,10 @@
 
 /******************************회원가입******************************/
 body{
-    background-color: #fcffcb;
+    /* background-color: #fcffcb; */
 }
 .reg_box{
-    width: 440px;
+    width: 500px;
     margin: 0 auto;
 }
 .reg_title{
@@ -46,17 +46,17 @@ body{
 }
 .inner_reg{
     display: flex;
-    gap: 10px;
+    gap: 55px;
     justify-content: space-evenly;
     width: 100%;
-    border: 2px solid #22974a;
+    border: 2px solid #008049;
     margin-top: 14px;
     border-radius: 25px;
 }
 .form_sec{
-    width: 300px;
+    width: 330px;
 }
-label{
+.form_text{
     display: block;
     margin-top: 10px;
     font-size: 14px;
@@ -67,31 +67,31 @@ label{
     padding: 0px 7px;
     background-color: transparent;
     outline: none;
-    border: 1px solid #22974a;
+    border: 1px solid #008049;
     border-radius: 5px;
-    height: 28px;
-    width: 300px;
+    height: 37px;
+    width: inherit;
     margin-top: 4px;
     box-sizing: border-box;
-    font-size: 11px;
+    font-size: 14px;
 }
 .pw_msg{
-    font-size: 10px;
+    font-size: 12px;
     color: #372e2e;
     margin-left: 6px;
 }
 
 .gender_box{
     background-color: transparent;
-    height: 28px;
+    height: 37px;
 }
 #u_gender{
     background-color: transparent;
     border: none;
     width: 100%;
     border-radius: 12px;
-    font-size: 11px;
-    padding-top: 5px;
+    font-size: 14px;
+    padding-top: 8px;
     outline: none;
 }
 /* 성별텍스트 */
@@ -102,7 +102,7 @@ label{
 }
 .form_sec p,.form_sec span{
     display: inline;
-    font-size: 10px;
+    font-size: 12px;
 }
 label:nth-last-child(1){
     display: inline-block;
@@ -129,10 +129,10 @@ label:nth-last-child(1){
 /* 가입 버튼 */
 #reg_btn_agr{
     display: inline-block;
-    width: 300px;
-    height: 30px;
+    width: 330px;
+    height: 37px;
     border-radius: 6px;
-    background-color: #22974a;
+    background-color: #008049;
     color: white;
     font-weight: 700;
     text-align: center;
@@ -146,7 +146,7 @@ label:nth-last-child(1){
     margin-top: 2px;
     font-size: 10px;
     font-weight: 700;
-    color: #22974a;
+    color: #008049;
 }
 
 
