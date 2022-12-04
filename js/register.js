@@ -144,7 +144,7 @@ function focus_chk(type) {
     }
 }
 function remove_msg(el){
-    //모든 pw 조건이 일치하면 메세지 지우게(pw 밑의 메세지 지우게
+    //각 조건이 일치하면 그에 해당하는 메세지가 지워짐
     if(el == 'pw'){
         if (reg_pw.test(pw.val())) {
             $('#reg_msg_pw').text("");
@@ -175,12 +175,9 @@ function remove_msg(el){
 function blank_chk(msg, txt) {
     if (txt.val().length == 0) {
         msg.text("필수 입력 항목입니다")
-        // return false;
     }
-    // return true;
 }
 function set_message(msg, val) {
-    // console.log(msg, e, val);
     $('#reg_msg_' + val).text(""); //msg 넣어주기 위함
     $('#reg_msg_' + val).text(msg); //msg 넣어주기 위함
 }
@@ -234,10 +231,7 @@ function form_chk(frm) {
         frm.promo_btn.value = "true";
         alert("회원가입이 완료되었습니다2");
         return true;
-        // frm.promo_btn.checked=false;
     }
-    // alert("회원가입이 완료되었습니다");
-    // return true;
 }
 
 function set_form_message(msg, e, val) {
